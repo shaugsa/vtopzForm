@@ -1,0 +1,25 @@
+{
+  "name": "task_vtopz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaugsa/test.git"
+  },
+  "author": "Zapolski Ihar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaugsa/test/issues"
+  },
+  "homepage": "https://github.com/shaugsa/test#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
