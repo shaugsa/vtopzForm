@@ -7,7 +7,9 @@
     <title>Gulp</title>
 </head>
 <body>
+
     @@include('./html/about.html')
+    @@loop('./html/newsItem.html', '../data/news.json')
     
 </body>
 </html>

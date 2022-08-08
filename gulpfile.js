@@ -1,58 +1,39 @@
-const {src, dest, watch, series, parallel} = require('gulp');
+const { watch, series, parallel} = require('gulp');
 const browserSync = require('browser-sync').create();
-const clean = require('gulp-clean');
 
-// Plagins
-const fileinclude = require('gulp-file-include');
-const htmlmin = require('gulp-htmlmin');
-const size = require('gulp-size');
-const plumber = require('gulp-plumber');
-const notify = require('gulp-notify')
-
-
-// dev HTNL
-const html = () => {
-    return src('src/*.html')
-    .pipe(plumber({
-        errorHandler: notify.onError(error => ({
-            title: 'HTML',
-            message: error.message
-        }))
-    }))
-    .pipe(fileinclude())
-    .pipe(size({ title : "До сжатия"}))
-    .pipe(htmlmin({
-        collapseWhitespace: true,
-    }))
-    .pipe(size({ title : "После сжатия"}))
-    .pipe(dest('./public'))
-    .pipe(browserSync.stream())
-}
+const path = require('./config/path.js');
 
 const server = () => {
     browserSync.init({
         server: {
-            baseDir: './public'
+            baseDir: path.root
         }
     })
 }
 
-const clear = () => {
-    return src('./public')
-    .pipe(clean())
-}
+// tasks
+const clear = require('./gulp/task/clear.js');
+const pug = require('./gulp/task/pug.js')
+const pug = require('./gulp/task/css.js')
+const pug = require('./gulp/task/css.js')
+
 
 // watch for HTML
 const watcher = () => {
-    watch('./src/**/*.*', html )
+    watch(path.pug.watch, pug).on('all', browserSync.reload);
+    watch(path.css.watch, css).on('all', browserSync.reload);
 }
 
-exports.html = html;
+// exports.html = html;
+exports.pug = pug;
 exports.watcher = watcher;
 exports.clear = clear;
+exports.css = css;
 
+
+//dev
 exports.dev = series(
     clear,
-    html,
+    parallel (pug, css),
     parallel (watcher, server)
 );
