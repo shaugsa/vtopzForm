@@ -1,24 +1,26 @@
 const {src, dest} = require('gulp');
-
 const path = require('../../config/path.js');
 const app = require('../../config/app.js')
 
 // Plagins
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-const pugs = require('gulp-pug')
+const imagemin = require('gulp-imagemin');
+const newer = require('gulp-newer');newer
 
-// Pug
-const pug = () => {
-    return src(path.pug.src)
+
+// js
+const img = () => {
+    return src(path.img.src)
     .pipe(plumber({
         errorHandler: notify.onError(error => ({
-            title : "Pug",
+            title : "image",
             message : error.message
         }))
     }))
-    .pipe(pugs(app.pug))
-    .pipe(dest(path.pug.dest))
+    .pipe(newer(path.img.dest))
+    .pipe(imagemin(app.imagemin))
+    .pipe(dest(path.img.dest))
 }
 
-module.exports = pug;
+module.exports = img;

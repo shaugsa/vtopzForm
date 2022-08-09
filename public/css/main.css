@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font: 30px/1.5 arial, sans-serif;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.news {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 22px;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  body {
+    color: #fff;
+    background-color: #000;
+  }
+}

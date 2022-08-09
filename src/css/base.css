@@ -3,7 +3,14 @@
 }
 
 body {
-    font-size: 22px;
+    font-size: 30px;
     font-family: arial,sans-serif;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    body {
+        color: #fff;
+        background-color: #333;
+    }
 }
