@@ -38,7 +38,7 @@ const build = series(
 );
 
 const dev = series(
-    build.
+    build,
     parallel(watcher, server)
 );
 
