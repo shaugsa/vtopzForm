@@ -10,3 +10,9 @@
   font-size: 22px;
   color: red;
 }
+
+.background {
+  background: url(./img/1.jpg);
+  width: 100px;
+  height: 500px;
+}
