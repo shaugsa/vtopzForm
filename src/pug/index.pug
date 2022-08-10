@@ -1,18 +1,15 @@
 extends layout/app
 
-block page 
-    include chunk/header
+block wrapper 
+    div.wrapper
+        div.block-right 
+            h1.form-name Sing up
 
-    h1.title Main 
+        div.form-wrapper
+            h2.from-wrapper__title New user?
 
-    h2 hello world
-    
-    img(srcset='img/1.jpg', alt='абстракция', width='500')
+            h3.form-wrapper__subtitle Use the form below to create your account.
+            form(action='/').form
+                include chunk/header
 
-    div.background
-
-    ul.news 
-        each item in news 
-            li= item.name
-
-    include chunk/footer
+                include chunk/footer

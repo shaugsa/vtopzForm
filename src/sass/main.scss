@@ -1,26 +1,8 @@
-$base-font-size: 22px;
-
-@mixin ph {
-    @media (max-width: 768px) {
-        @content;
-    }
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-size: 30px;
-    font-family: arial,sans-serif;
-    line-height: 1.5;
-
-    @include ph {
-        color: #fff;
-        background-color: #000;
-    }
+    background-color: #F2F2F2;
+    margin: 0 auto;
 }
-
-
-@import "./title.scss";
-@import "./news.scss";

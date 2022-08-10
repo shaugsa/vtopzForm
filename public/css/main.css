@@ -1,32 +1,32 @@
+.block-right {
+  background: #5A61ED;
+  width: 137.2px;
+  height: 480px;
+  margin: 0;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 665px;
+  margin-top: 22vh;
+}
+
+.form-wrapper {
+  background: #fff;
+  width: 100%;
+  height: 480px;
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-  font: 30px/1.5 arial, sans-serif;
+  background: #F2F2F2;
+  margin: 0 auto;
 }
-
 .title {
   text-transform: uppercase;
-}
-
-.news {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  font-size: 22px;
-  color: red;
-}
-
-@media (max-width: 768px) {
-  body {
-    color: #fff;
-    background-color: #000;
-  }
 }

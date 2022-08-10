@@ -14,6 +14,7 @@ const shorthand = require('gulp-shorthand');
 const gcmq = require('gulp-group-css-media-queries');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
+const concat = require('gulp-concat');
 
 // SCSS
 const scss = () => {
@@ -33,6 +34,7 @@ const scss = () => {
     .pipe(gcmq())
     .pipe(shorthand())
     .pipe(size({title: 'main.css'}))
+    .pipe(concat('main.css'))
     .pipe(dest(path.scss.dest))
     .pipe(rename({suffix: ".min"}))
     .pipe(csso())
