@@ -24,12 +24,6 @@ body {
   color: red;
 }
 
-.background {
-  background: url(./img/1.jpg);
-  width: 100px;
-  height: 500px;
-}
-
 @media (max-width: 768px) {
   body {
     color: #fff;
