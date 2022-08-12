@@ -13,54 +13,20 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+/***/ (function() {
 
-eval("const sum = __webpack_require__(/*! ./module/sum */ \"./src/js/module/sum.js\")\r\nconsole.log(sum(2, 10))\n\n//# sourceURL=webpack://task_vtopz/./src/js/main.js?");
-
-/***/ }),
-
-/***/ "./src/js/module/sum.js":
-/*!******************************!*\
-  !*** ./src/js/module/sum.js ***!
-  \******************************/
-/***/ (function(module) {
-
-eval("module.exports = (a,b) => a + b;\n\n//# sourceURL=webpack://task_vtopz/./src/js/module/sum.js?");
+eval("window.onload = function() {\r\n\r\n    const day = document.getElementById('selectDay')\r\n    const month = document.getElementById('selectMonth')\r\n    const year = document.getElementById('selectYear')\r\n    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']\r\n    const date = new Date();\r\n\r\n    function getDay() {\r\n        for (let i = 0; i <= 31; i++) {\r\n            let item = document.createElement('option')\r\n            item.className = 'item'\r\n            item.value = i\r\n            item.innerHTML = i\r\n            day.append(item)\r\n        }\r\n    }\r\n\r\n    function getMonth() { \r\n        for (let i = 0; i < months.length; i++) {\r\n            let item = document.createElement('option')\r\n            item.className = 'item'\r\n            item.value = months[i]\r\n            item.innerHTML = months[i]\r\n            month.append(item)\r\n        }\r\n    }\r\n\r\n    function getYear() { \r\n        for (let i = 1920; i <= date.getFullYear(); i++) {\r\n            let item = document.createElement('option')\r\n            item.className = 'item'\r\n            item.value = i\r\n            item.innerHTML = i\r\n            year.append(item)\r\n        }\r\n    }\r\n\r\n    getDay();\r\n    getMonth(months);\r\n    getYear();\r\n\r\n}\r\n\r\n\n\n//# sourceURL=webpack://task_vtopz/./src/js/main.js?");
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/main.js");
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/js/main.js"]();
 /******/ 	
 /******/ })()
 ;

@@ -3,6 +3,26 @@
   width: 137.2px;
   height: 480px;
   margin: 0;
+  padding: 24px;
+  position: relative;
+}
+
+.form-name {
+  width: 100%;
+  position: absolute;
+  bottom: 22px;
+  left: 56px;
+}
+
+.form-name h1 {
+  font: 400 49px/63px "PT Sans", sans-serif;
+  color: #fff;
+  letter-spacing: 0.5px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  margin: 0;
 }
 .wrapper {
   display: -webkit-box;
@@ -10,13 +30,62 @@
   display: flex;
   margin: 0 auto;
   width: 665px;
+  height: 480px;
   margin-top: 22vh;
 }
 
 .form-wrapper {
   background: #fff;
   width: 100%;
-  height: 480px;
+  padding: 38px 22px 32px 20px;
+}
+
+.form-wrapper__title {
+  font: 400 22px/26px "Work Sans", sans-serif;
+  color: #111111;
+  letter-spacing: -0.46px;
+  margin: 0;
+}
+
+.form-wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-wrapper__subtitle {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-wrapper .label {
+  font: 400 12px/14px "Work Sans", sans-serif;
+  color: #7C7C7C;
+}
+
+.form-wrapper .input {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  width: 234px;
+  color: #111111;
+  border: 0px solid;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.form-wrapper .input:active,
+.form-wrapper :hover,
+.form-wrapper :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.form-wrapper .block {
+  width: 234px;
+}
+
+#selectMonth {
+  overflow: scroll;
 }
 * {
   -webkit-box-sizing: border-box;

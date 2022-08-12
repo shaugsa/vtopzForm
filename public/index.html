@@ -5,21 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/main.min.css"/>
+    <linl rel="preconnect" href="https://fonts.googleapis.com"></linl>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;family=Work+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <script src="js/main.js"></script>
     <title>Document </title>
   </head>
   <body>
     <div class="wrapper">
       <div class="block-right"> 
-        <h1 class="form-name">Sing up</h1>
+        <div class="form-name"> 
+          <h1>Sing up</h1>
+        </div>
       </div>
       <div class="form-wrapper">
-        <h2 class="from-wrapper__title">New user?</h2>
+        <h2 class="form-wrapper__title">New user?</h2>
         <h3 class="form-wrapper__subtitle">Use the form below to create your account.</h3>
-        <form class="form" action="/">
-          <header> </header>
-          <footer></footer>
-        </form>
+        <form class="form" action="/"></form>
+        <div class="name-block block">
+          <label class="label" for="first-name">First Name</label>
+          <input class="frst-name input" type="text" id="first-name" placeholder="Alice"/>
+        </div>
+        <div class="secondName-block block">
+          <label class="label" for="second-name">Last Name</label>
+          <input class="second-name input" type="text" id="second-name" placeholder="Miller"/>
+        </div>
+        <div class="nationality-block block">
+          <label class="label" for="nationality">Nationality </label>
+          <input class="nationality input" type="text" id="nationality" placeholder="American"/>
+        </div>
+        <div class="email-block block">
+          <label class="label" for="email">E-mail</label>
+          <input class="email input" type="email" id="email" placeholder="alice.miller@yahoo.com"/>
+        </div>
+        <div class="date block">
+          <p>Date of Birth </p>
+          <select id="selectDay" name="select"></select>
+          <select class="selectMonth" id="selectMonth" name="select"></select>
+          <select id="selectYear" name="select"></select>
+        </div>
+        <div class="gender block">
+          <p>Gender</p>
+          <label class="label" for="male">Male
+            <input class="male input" type="checkbox" name="checkbox" value="value" id="male"/>
+          </label>
+          <label class="label" for="female">Female
+            <input class="female input" type="checkbox" name="checkbox" value="value" id="female"/>
+          </label>
+        </div>
+        <label class="label" for="password">Password</label>
+        <input class="passsword input" type="password" id="passsword" name="password" value=""/>
+        <label class="label" for="confirmPassword">Confirm Password</label>
+        <input class="confirmpassword input" type="password" id="confirmPassword" name="confirmPassword" value=""/>
+        <footer>
+          <div class="question">
+            <p>Have an account?</p><a href="#">Login</a>
+          </div>
+        </footer>
       </div>
     </div>
   </body>

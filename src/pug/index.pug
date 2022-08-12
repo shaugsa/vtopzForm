@@ -3,13 +3,53 @@ extends layout/app
 block wrapper 
     div.wrapper
         div.block-right 
-            h1.form-name Sing up
+            div.form-name 
+                h1 Sing up
 
         div.form-wrapper
-            h2.from-wrapper__title New user?
+            h2.form-wrapper__title New user?
 
             h3.form-wrapper__subtitle Use the form below to create your account.
             form(action='/').form
-                include chunk/header
 
-                include chunk/footer
+            div.name-block.block
+                label.label(for="first-name") First Name
+                input.frst-name.input(type='text' id='first-name' placeholder='Alice')
+
+            div.secondName-block.block
+                label.label(for="second-name") Last Name
+                input.second-name.input(type='text' id='second-name' placeholder='Miller')
+
+            div.nationality-block.block
+                label.label(for="nationality") Nationality 
+                input.nationality.input(type='text' id='nationality' placeholder='American')
+
+            div.email-block.block
+                label.label(for="email") E-mail
+                input.email.input(type='email' id='email' placeholder='alice.miller@yahoo.com')
+
+            div.date.block
+                p Date of Birth 
+                select#selectDay(name="select")
+                select#selectMonth.selectMonth(name="select")
+                select#selectYear(name="select")
+            
+            div.gender.block
+                p Gender
+                label.label(for="male") Male
+                    input.male.input(type="checkbox" name="checkbox" value="value" id="male")
+                label.label(for="female") Female
+                    input.female.input(type="checkbox" name="checkbox" value="value" id="female")
+            
+            label.label(for="password") Password
+            input.passsword.input(type="password" id="passsword" name="password" value="")
+
+            label.label(for="confirmPassword") Confirm Password
+            input.confirmpassword.input(type="password" id="confirmPassword" name="confirmPassword" value="")
+            
+            footer
+                 div.question
+                    p Have an account?
+                    a(href="#") Login
+
+            

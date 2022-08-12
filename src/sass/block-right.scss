@@ -1,6 +1,29 @@
+@import 'var';
+
 .block-right {
     width: 137.2px;
     height: 480px;
     background-color: #5A61ED;
+    margin: 0;
+    padding: 24px;
+    position: relative;
+}
+
+.form-name {
+    width: 100%;
+    position: absolute;
+    bottom: 22px;
+    left: 56px;  
+}
+
+.form-name h1 {
+    color: $white;
+    font-family: $font-ptSans;
+    font-weight: $regular;
+    font-size: 49px;
+    line-height: 63px;
+    letter-spacing: 0.5px;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
     margin: 0;
 }
