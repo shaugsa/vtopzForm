@@ -34,8 +34,8 @@
         </div>
         <div class="line">
           <div class="block">
-            <label class="label" for="nationality">Nationality </label>
-            <input class="nationality input" type="text" id="nationality" placeholder="American"/>
+            <label class="label" for="selectNat">Nationality </label>
+            <section class="nationality" id="selectNat" name="select"></section>
           </div>
           <div class="block">
             <label class="label" for="email">E-mail</label>
@@ -52,24 +52,27 @@
           <div class="gender">
             <p>Gender</p>
             <input class="male gender-input" type="radio" name="checkbox" value="value" id="male"/>
-            <label class="gender-text" for="male">Male</label>
+            <label class="gender-text gender-text__left" for="male">Male</label>
             <input class="female gender-input" type="radio" name="checkbox" value="value" id="female"/>
             <label class="gender-text" for="female">Female</label>
           </div>
         </div>
         <div class="line">
           <div class="block">
-            <input class="passsword input" type="password" id="passsword" name="password" value=""/>
             <label class="label" for="password">Password</label>
+            <input class="passsword input" type="password" id="passsword" name="password" value=""/>
           </div>
           <div class="block">
-            <input class="confirmpassword input" type="password" id="confirmPassword" name="confirmPassword" value=""/>
             <label class="label" for="confirmPassword">Confirm Password</label>
+            <input class="confirmpassword input" type="password" id="confirmPassword" name="confirmPassword" value=""/>
           </div>
         </div>
         <footer>
           <div class="question">
             <p>Have an account?</p><a href="#">Login</a>
+          </div>
+          <div class="button-block"> 
+            <button>Complete Signup</button>
           </div>
         </footer>
       </div>

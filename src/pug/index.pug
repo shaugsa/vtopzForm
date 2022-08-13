@@ -22,8 +22,8 @@ block wrapper
 
             div.line
                 div.block
-                    label.label(for="nationality") Nationality 
-                    input.nationality.input(type='text' id='nationality' placeholder='American')
+                    label.label(for="selectNat") Nationality 
+                    section.nationality#selectNat(name="select")
                 div.block
                     label.label(for="email") E-mail
                     input.email.input(type='email' id='email' placeholder='alice.miller@yahoo.com')
@@ -38,20 +38,22 @@ block wrapper
                 div.gender
                     p Gender
                     input.male.gender-input(type="radio" name="checkbox" value="value" id="male")
-                    label.gender-text(for="male") Male
+                    label.gender-text.gender-text__left(for="male") Male
                     input.female.gender-input(type="radio" name="checkbox" value="value" id="female")
                     label.gender-text(for="female") Female
 
             div.line
                 div.block
-                    input.passsword.input(type="password" id="passsword" name="password" value="")
                     label.label(for="password") Password
+                    input.passsword.input(type="password" id="passsword" name="password" value="")
                 div.block
-                    input.confirmpassword.input(type="password" id="confirmPassword" name="confirmPassword" value="")
                     label.label(for="confirmPassword") Confirm Password
+                    input.confirmpassword.input(type="password" id="confirmPassword" name="confirmPassword" value="")
             footer
-                 div.question
+                div.question
                     p Have an account?
                     a(href="#") Login
+                div.button-block 
+                    button Complete Signup
 
             

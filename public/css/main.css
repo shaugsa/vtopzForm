@@ -67,11 +67,23 @@
   color: #111111;
 }
 
+.form-wrapper .gender-text__left {
+  margin-right: 17px;
+}
+
 .form-wrapper .gender-input {
   font: 400 14px/16.41px "Work Sans", sans-serif;
   color: #111111;
   border: 0px;
   border-bottom: 1px solid #F2F2F2;
+  margin: 0;
+}
+
+.form-wrapper .gender p {
+  font: 400 12px/14px "Work Sans", sans-serif;
+  color: #7C7C7C;
+  margin: 0;
+  margin-bottom: 6.3px;
 }
 
 .form-wrapper .label {
@@ -125,8 +137,46 @@
   color: #7C7C7C;
 }
 
+.form-wrapper .birthDay-block p {
+  margin: 0;
+  margin-bottom: 5.3px;
+}
+
 #selectMonth {
   overflow: scroll;
+}
+
+footer {
+  font: 200 13px/15.25px "Work Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #000;
+  margin-top: 103px;
+}
+
+footer a {
+  color: #5A61ED;
+}
+
+footer button {
+  font: 14px/18.12px "PT Sans", sans-serif;
+  background: #5A61ED;
+  width: 154px;
+  height: 32px;
+  text-align: center;
+  color: #fff;
+  border: 0;
+}
+
+footer button:hover {
+  cursor: pointer;
 }
 * {
   -webkit-box-sizing: border-box;

@@ -46,6 +46,9 @@
             font-weight: $regular;
             font-size: 14px;
             line-height: 16.41px;
+            &__left {
+                margin-right: 17px;
+            }
         }
 
         &-input {
@@ -56,7 +59,20 @@
             line-height: 16.41px;
             border: 0px;
             border-bottom: 1px solid $light-gray;
+            margin: 0;
         }
+
+        p {
+            font-family: $font-workSans;
+            color: $gray;
+            font-weight: $regular;
+            font-size: 12px;
+            line-height: 14px;
+            margin: 0;
+            margin-bottom: 6.3px;
+        }
+
+        
     }
 
     .label {
@@ -116,9 +132,45 @@
         font-weight: $regular;
         font-size: 12px;
         line-height: 14px;
+
+        p {
+            margin: 0;
+            margin-bottom: 5.3px;
+        }
     }
 }
 
 #selectMonth {
     overflow: scroll;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font-workSans;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 15.25px;
+    color: #000;
+    margin-top: 103px;
+
+    a {
+        color: #5A61ED;
+    }
+
+    button {
+        width: 154px;
+        height: 32px;
+        font-family: $font-ptSans;
+        font-size: 14px;
+        line-height: 18.12px;
+        text-align: center;
+        background-color: #5A61ED;
+        color: $white;
+        border: 0;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

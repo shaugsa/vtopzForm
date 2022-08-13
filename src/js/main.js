@@ -1,5 +1,8 @@
+import nationalities from './module/nationality.js';
+
 window.onload = function() {
 
+    
     const day = document.getElementById('selectDay')
     const month = document.getElementById('selectMonth')
     const year = document.getElementById('selectYear')
@@ -36,9 +39,19 @@ window.onload = function() {
         }
     }
 
+    function getNationalyti() {
+        for (let i = 0; i < nationalities.length; i++) {
+
+        }
+    }
+
+    console.log(nationalities)
+
     getDay();
     getMonth(months);
     getYear();
 
+    
+    
 }
 
