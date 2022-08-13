@@ -7,7 +7,7 @@ window.onload = function() {
     const date = new Date();
 
     function getDay() {
-        for (let i = 0; i <= 31; i++) {
+        for (let i = 1; i <= 31; i++) {
             let item = document.createElement('option')
             item.className = 'item'
             item.value = i
