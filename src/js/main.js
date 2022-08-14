@@ -1,15 +1,6 @@
 import {nationalities} from './module/nationality.js';
-// import animation from './module/animation';
 
 window.onload = function() {
-
-    new Vivus('imgVivus', {
-        file: '../img/man.svg',
-        onReady: function (myVivus) {
-            myVivus.el.setAttribute('height', auto)
-        }
-    })
-
     
     const day = document.getElementById('selectDay')
     const month = document.getElementById('selectMonth')
