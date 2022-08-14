@@ -2,6 +2,7 @@ extends layout/app
 
 block wrapper 
     div.wrapper
+        
         div.block-right 
             div.form-name 
                 h1 Sign up
@@ -23,7 +24,7 @@ block wrapper
             div.line
                 div.block
                     label.label(for="selectNat") Nationality 
-                    section.nationality#selectNat(name="select")
+                    select.select.nationality#selectNat(name="select")
                 div.block
                     label.label(for="email") E-mail
                     input.email.input(type='email' id='email' placeholder='alice.miller@yahoo.com')
@@ -45,15 +46,18 @@ block wrapper
             div.line
                 div.block
                     label.label(for="password") Password
-                    input.passsword.input(type="password" id="passsword" name="password" value="")
+                    input.passsword.input(type="password" id="password" name="password" value="")
                 div.block
                     label.label(for="confirmPassword") Confirm Password
                     input.confirmpassword.input(type="password" id="confirmPassword" name="confirmPassword" value="")
+            div.animation
+                img#imgVivus(src="../img/man.svg", alt="man")
             footer
                 div.question
                     p Have an account?
                     a(href="#") Login
                 div.button-block 
                     button Complete Signup
+            
 
             

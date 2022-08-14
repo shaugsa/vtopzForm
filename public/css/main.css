@@ -32,12 +32,20 @@
   width: 665px;
   height: 480px;
   margin-top: 22vh;
+  position: relative;
+}
+
+.animation {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .form-wrapper {
   background: #fff;
   width: 527px;
   padding: 38px 22px 32px 20px;
+  position: relative;
 }
 
 .form-wrapper__title {
@@ -102,6 +110,11 @@
   display: block;
 }
 
+.form-wrapper .input:focus {
+  color: #FF2828;
+  border-bottom: 1px solid #FF2828;
+}
+
 .form-wrapper .input:active,
 .form-wrapper :hover,
 .form-wrapper :focus {
@@ -144,6 +157,11 @@
 
 #selectMonth {
   overflow: scroll;
+}
+
+.nationality {
+  overflow: scroll;
+  width: 234px;
 }
 
 footer {
