@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;family=Work+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
     <script src="js/main.js"></script>
     <title>Test</title>
   </head>
@@ -25,33 +26,33 @@
         <h3 class="form-wrapper__subtitle">Use the form below to create your account.</h3>
         <form class="form" action="/"></form>
         <div class="line">
-          <div class="block">
+          <div class="block first-block" data-aos="fade-up" data-aos-duration="2000">
             <label class="label" for="first-name">First Name</label>
             <input class="frst-name input" type="text" id="first-name" placeholder="Alice"/>
           </div>
-          <div class="block">
+          <div class="block second-block" data-aos="fade-up" data-aos-duration="4000">
             <label class="label" for="second-name">Last Name</label>
             <input class="second-name input" type="text" id="second-name" placeholder="Miller"/>
           </div>
         </div>
         <div class="line">
-          <div class="block">
+          <div class="block" data-aos="fade-up" data-aos-duration="6000">
             <label class="label" for="selectNat">Nationality </label>
             <select class="select nationality" id="selectNat" name="select"></select>
           </div>
-          <div class="block">
+          <div class="block" data-aos="fade-up" data-aos-duration="8000">
             <label class="label" for="email">E-mail</label>
             <input class="email input" type="email" id="email" placeholder="alice.miller@yahoo.com"/>
           </div>
         </div>
-        <div class="line">
-          <div class="block birthDay-block">
+        <div class="line"> 
+          <div class="block birthDay-block" data-aos="fade-up" data-aos-duration="10000">
             <p>Date of Birth </p>
             <select class="select" id="selectDay" name="select"></select>
             <select class="select selectMonth" id="selectMonth" name="select"></select>
             <select class="select" id="selectYear" name="select"></select>
           </div>
-          <div class="gender">
+          <div class="gender" data-aos="fade-up" data-aos-duration="12000">
             <p>Gender</p>
             <input class="male gender-input" type="radio" name="checkbox" value="value" id="male"/>
             <label class="gender-text gender-text__left" for="male">Male</label>
@@ -60,12 +61,12 @@
           </div>
         </div>
         <div class="line">
-          <div class="block">
+          <div class="block" data-aos="fade-up" data-aos-duration="14000">
             <label class="label" for="password">Password</label>
             <input class="passsword input" type="password" id="password" name="password" value=""/>
           </div>
-          <div class="block">
-            <label class="label" for="confirmPassword">Confirm Password</label>
+          <div class="block" data-aos="fade-up">
+            <label class="label" for="confirmPassword" data-aos-duration="16000">Confirm Password</label>
             <input class="confirmpassword input" type="password" id="confirmPassword" name="confirmPassword" value=""/>
           </div>
         </div>

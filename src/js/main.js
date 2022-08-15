@@ -2,6 +2,15 @@ import {nationalities} from './module/nationality.js';
 
 window.onload = function() {
 
+    AOS.init()
+
+    // AOS.init({
+    //     duration: 2000,
+    // });
+
+    const input = document.querySelectorAll('input');
+    console.log(input.length);
+
     const myVivus = new Vivus('my-svg');
         myVivus.stop().reset().play(.5);
 

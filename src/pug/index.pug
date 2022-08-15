@@ -14,29 +14,29 @@ block wrapper
             form(action='/').form
 
             div.line
-                div.block
+                div.block.first-block(data-aos="fade-up" data-aos-duration="2000")
                     label.label(for="first-name") First Name
                     input.frst-name.input(type='text' id='first-name' placeholder='Alice')
-                div.block
+                div.block.second-block(data-aos="fade-up" data-aos-duration="4000")
                     label.label(for="second-name") Last Name
                     input.second-name.input(type='text' id='second-name' placeholder='Miller')
 
             div.line
-                div.block
+                div.block(data-aos="fade-up" data-aos-duration="6000")
                     label.label(for="selectNat") Nationality 
                     select.select.nationality#selectNat(name="select")
-                div.block
+                div.block(data-aos="fade-up" data-aos-duration="8000")
                     label.label(for="email") E-mail
                     input.email.input(type='email' id='email' placeholder='alice.miller@yahoo.com')
 
-            div.line
-                div.block.birthDay-block
+            div.line 
+                div.block.birthDay-block(data-aos="fade-up" data-aos-duration="10000")
                     p Date of Birth 
                     select.select#selectDay(name="select")
                     select.select#selectMonth.selectMonth(name="select")
                     select.select#selectYear(name="select")
 
-                div.gender
+                div.gender(data-aos="fade-up" data-aos-duration="12000")
                     p Gender
                     input.male.gender-input(type="radio" name="checkbox" value="value" id="male")
                     label.gender-text.gender-text__left(for="male") Male
@@ -44,11 +44,11 @@ block wrapper
                     label.gender-text(for="female") Female
 
             div.line
-                div.block
+                div.block(data-aos="fade-up" data-aos-duration="14000")
                     label.label(for="password") Password
                     input.passsword.input(type="password" id="password" name="password" value="")
-                div.block
-                    label.label(for="confirmPassword") Confirm Password
+                div.block(data-aos="fade-up")
+                    label.label(for="confirmPassword" data-aos-duration="16000") Confirm Password
                     input.confirmpassword.input(type="password" id="confirmPassword" name="confirmPassword" value="")
             footer
                 div.question
