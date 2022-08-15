@@ -1,7 +1,11 @@
 import {nationalities} from './module/nationality.js';
+const vivus = require('vivus');
 
 window.onload = function() {
-    
+
+    const vivus = new Vivus('my-svg-id');
+    vivus.stop().reset().play(2);
+
     const day = document.getElementById('selectDay')
     const month = document.getElementById('selectMonth')
     const year = document.getElementById('selectYear')
@@ -54,6 +58,6 @@ window.onload = function() {
     getYear();
     getNationalyti(nationalities)
 
-
+    
 }
 

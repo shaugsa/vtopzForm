@@ -7,19 +7,25 @@
     height: 480px;
     margin-top: 22vh;
     position: relative;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .animation {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 35px;
+    left: -160px;
+}
+
+#backgroundrect {
+    opacity: 0;
 }
 
 .form-wrapper {
     width: 527px;
-    background-color: #fff;
     padding: 38px 22px 32px 20px;
     position: relative;
+    z-index: 100;
 
     &__title {
         font-family: $font-workSans;
@@ -103,6 +109,7 @@
         border: 0px solid;
         border-bottom: 1px solid $light-gray;
         display: block;
+        background: transparent;
 
         &:focus {
             color:#FF2828;
@@ -128,7 +135,7 @@
         line-height: 16.41px;
         border: 0;
         border-bottom: 1px solid $light-gray;
-        margin-right: 9.8px;
+        margin-right: 3.8px;
     }
 
     .question {
@@ -154,8 +161,17 @@
 
 }
 
+#selectDay {
+    width: 56px;
+}
+
 #selectMonth {
+    width: 91px;
     overflow: scroll;
+}
+
+#selectYear{
+    width: 67px;
 }
 
 .nationality {
@@ -193,3 +209,4 @@ footer {
         }
     }
 }
+
