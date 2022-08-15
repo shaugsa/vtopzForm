@@ -140,6 +140,7 @@
   border: 0;
   border-bottom: 1px solid #F2F2F2;
   margin-right: 3.8px;
+  background: transparent;
 }
 
 .form-wrapper .question {

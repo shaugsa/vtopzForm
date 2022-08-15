@@ -2,17 +2,32 @@ import {nationalities} from './module/nationality.js';
 
 window.onload = function() {
 
-    AOS.init()
+    // function getAni() {
+    //     const aos = document.getElementsByClassName('aos');
 
-    // AOS.init({
-    //     duration: 2000,
-    // });
+    //     for (let i = 0; i < aos.length; i++) {
+    //         setTimeout(() => {
+    //             aos[i].setAttribute('data-aos', "fade-up")
+    //             AOS.init({
+    //                 duration: 2000
+    //             })
+    //         }, 2000)
+    //     } 
+    // }
 
-    const input = document.querySelectorAll('input');
-    console.log(input.length);
+    // getAni()
+
+    AOS.init({
+        duration: 2000,
+        animatedClassName: 'aos',
+    })
+
 
     const myVivus = new Vivus('my-svg');
-        myVivus.stop().reset().play(.5);
+    myVivus.stop().reset().play(.5)
+    setInterval(() => myVivus.stop().reset().play(.5), 10000)
+
+        
 
     const day = document.getElementById('selectDay')
     const month = document.getElementById('selectMonth')
@@ -61,6 +76,7 @@ window.onload = function() {
         }
     }
 
+    
     getDay();
     getMonth(months);
     getYear();
