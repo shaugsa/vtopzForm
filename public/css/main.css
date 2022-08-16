@@ -213,6 +213,22 @@ footer button {
 footer button:hover {
   cursor: pointer;
 }
+
+.aos {
+  visibility: hidden;
+}
+
+.up {
+  visibility: visible;
+  position: relative;
+  bottom: -60px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transform: translate3d(0px, -60px, 0px);
+  transform: translate3d(0px, -60px, 0px);
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

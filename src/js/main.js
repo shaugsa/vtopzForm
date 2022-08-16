@@ -2,33 +2,30 @@ import {nationalities} from './module/nationality.js';
 
 window.onload = function() {
 
-    // function getAni() {
-    //     const aos = document.getElementsByClassName('aos');
+    // up element
+    const item = document.getElementsByClassName('aos')
+    let k = 0; 
 
-    //     for (let i = 0; i < aos.length; i++) {
-    //         setTimeout(() => {
-    //             aos[i].setAttribute('data-aos', "fade-up")
-    //             AOS.init({
-    //                 duration: 2000
-    //             })
-    //         }, 2000)
-    //     } 
-    // }
+    function getAni() {
+        
+        setTimeout(function() {
+            item[k].classList.add('up')
+            k++;
 
-    // getAni()
+            if (k < item.length) {
+                getAni();
+            }
+        }, 800)
+    }
 
-    AOS.init({
-        duration: 2000,
-        animatedClassName: 'aos',
-    })
+    getAni()
 
-
+    // vivus animation
     const myVivus = new Vivus('my-svg');
     myVivus.stop().reset().play(.5)
     setInterval(() => myVivus.stop().reset().play(.5), 10000)
 
-        
-
+    // get date and nationality
     const day = document.getElementById('selectDay')
     const month = document.getElementById('selectMonth')
     const year = document.getElementById('selectYear')
