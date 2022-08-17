@@ -1,0 +1,77 @@
+@media (max-width: 480px ) {
+    body {
+        padding: 15px;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: block;
+        margin-top: 0;
+        height: 100%;
+    }
+    
+    .form-wrapper {
+        padding: 10px 20px 10px;
+    }
+
+    .form-wrapper .line {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .block-right {
+        width: 100%;
+        height: 76px;
+        padding: 10px 10px 10px 20px;
+    }
+
+    .form-name {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 0;
+    }
+
+    .form-name h1 {
+        writing-mode: unset;
+        rotate: 0deg;
+    }
+
+    .block {
+        margin-bottom: 10px;
+    }
+
+    .nationality {
+        width: 300px;
+    }
+    
+    .birthDay-block {
+        display: contents;
+    }
+
+    .form-wrapper .input {
+        width: 300px;
+    }
+
+    #selectDay {
+        width: 80px;
+    }
+
+    #selectMonth {
+        width: 120px;
+    }
+
+    #selectYear {
+        width: 80px;
+    }
+
+    .animation {
+        top: 200px;
+        left: -377px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
