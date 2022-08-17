@@ -42,6 +42,10 @@
         margin-bottom: 10px;
     }
 
+    .gender {
+        margin-top: 10px;
+    }
+
     .nationality {
         width: 300px;
     }
@@ -73,5 +77,48 @@
 
     footer {
         margin-top: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .block-right {
+        height: 70px;
+        padding: 5px 10px 10px 20px;
+    }
+
+    .form-wrapper .input {
+        width: 230px;
+    }
+
+    .gender {
+        margin-top: 10px;
+    }
+
+    #selectDay {
+        width: 60px;
+    }
+
+    #selectMonth {
+        width: 100px;
+    }
+
+    #selectYear {
+        width: 60px;
+    }
+
+    footer {
+        display: contents;
+        text-align: center;
+    }
+
+    .form-wrapper .question {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .animation {
+        top: 195px;
+        left: -495px;
     }
 }
