@@ -1,0 +1,517 @@
+.block-right {
+  background: #5A61ED;
+  width: 137.2px;
+  height: 480px;
+  margin: 0;
+  padding: 24px;
+  position: relative;
+}
+
+.form-name {
+  width: 100%;
+  position: absolute;
+  bottom: 22px;
+  left: 69px;
+}
+
+.form-name h1 {
+  font: 400 49px/63px "PT Sans", sans-serif;
+  color: #fff;
+  letter-spacing: 0.5px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  margin: 0;
+}
+.wibro {
+  display: block;
+  position: relative;
+  -webkit-animation: 0.1s tremor ease-out infinite;
+  animation: 0.1s tremor ease-out infinite;
+}
+
+@-webkit-keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    top: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+
+  50%, 100% {
+    left: 1px;
+    top: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
+
+@keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%);
+  }
+
+  50%, 100% {
+    left: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%);
+  }
+}
+.wrapper {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 665px;
+  height: 480px;
+  margin-top: 16vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.animation {
+  position: absolute;
+  top: 35px;
+  left: -160px;
+}
+
+#backgroundrect {
+  opacity: 0;
+}
+
+.form-wrapper {
+  max-width: 527px;
+  padding: 38px 22px 32px 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.form-wrapper__title {
+  font: 400 22px/26px "Work Sans", sans-serif;
+  color: #111111;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.form-wrapper__subtitle {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 18px;
+  letter-spacing: -0.3px;
+}
+
+.form-wrapper .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20.18px;
+}
+
+.form-wrapper .gender-text {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  color: #111111;
+}
+
+.form-wrapper .gender-text__left {
+  margin-right: 17px;
+}
+
+.form-wrapper .gender-input {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  color: #111111;
+  border: 0px;
+  border-bottom: 1px solid #F2F2F2;
+  margin: 0;
+}
+
+.form-wrapper .gender p {
+  font: 400 12px/14px "Work Sans", sans-serif;
+  color: #7C7C7C;
+  margin: 0;
+  margin-bottom: 6.3px;
+}
+
+.form-wrapper .label {
+  font: 400 12px/14px "Work Sans", sans-serif;
+  color: #7C7C7C;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-wrapper .input {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  width: 234px;
+  color: #111111;
+  border: 0px solid;
+  border-bottom: 1px solid #F2F2F2;
+  display: block;
+  background: transparent;
+}
+
+.form-wrapper .input:active,
+.form-wrapper :hover,
+.form-wrapper :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.form-wrapper .block {
+  width: 234px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.form-wrapper .info {
+  background: #fff;
+  display: none;
+  border: 1px solid #a99494;
+  position: absolute;
+  border-radius: 5px;
+  padding: 5px;
+  top: 50px;
+}
+
+.form-wrapper .arrow {
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  -webkit-transform: 90deg;
+  transform: 90deg;
+  rotate: 135deg;
+  top: -8px;
+  left: 15px;
+  background: white;
+  border-left: 1px solid #a99494;
+  border-bottom: 1px solid #a99494;
+}
+
+.form-wrapper .info__text {
+  font: 12px/14.06px "Work Sans", sans-serif;
+  color: #7C7C7C;
+  margin: 0;
+}
+
+.form-wrapper .email__checkMark {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 24px;
+}
+
+.form-wrapper .select {
+  font: 400 14px/16.41px "Work Sans", sans-serif;
+  color: #111111;
+  border: 0;
+  border-bottom: 1px solid #F2F2F2;
+  margin-right: 3.8px;
+  background: transparent;
+}
+
+.form-wrapper .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-wrapper .question p {
+  margin: 0;
+}
+
+.form-wrapper .birthDay-block {
+  font: 400 12px/14px "Work Sans", sans-serif;
+  color: #7C7C7C;
+}
+
+.form-wrapper .birthDay-block p {
+  margin: 0;
+  margin-bottom: 5.3px;
+}
+
+#selectDay {
+  width: 56px;
+}
+
+#selectMonth {
+  width: 91px;
+  overflow: scroll;
+}
+
+#selectYear {
+  width: 67px;
+}
+
+.nationality {
+  overflow: scroll;
+  width: 234px;
+}
+
+footer {
+  font: 200 13px/15.25px "Work Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #000;
+  margin-top: 103px;
+}
+
+footer p {
+  letter-spacing: -0.3px;
+}
+
+footer a {
+  color: #5A61ED;
+  letter-spacing: 0.3px;
+}
+
+footer button {
+  font: 14px/18.12px "PT Sans", sans-serif;
+  background: #5A61ED;
+  width: 154px;
+  height: 32px;
+  text-align: center;
+  color: #fff;
+  border: 0;
+}
+
+footer button:hover {
+  cursor: pointer;
+}
+
+.aos {
+  visibility: hidden;
+}
+
+.up {
+  visibility: visible;
+  position: relative;
+  bottom: -60px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transform: translate3d(0px, -60px, 0px);
+  transform: translate3d(0px, -60px, 0px);
+}
+
+.first-name,
+.second-name,
+.email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hidden {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F2F2F2;
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .form-wrapper .email__checkMark {
+    right: -57px;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    height: 100%;
+  }
+
+  .form-wrapper {
+    padding: 10px 20px 10px;
+  }
+
+  .form-wrapper .line {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .block-right {
+    width: 100%;
+    height: 76px;
+    padding: 10px 10px 10px 20px;
+  }
+
+  .form-name {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+
+  .form-name h1 {
+    -webkit-writing-mode: unset;
+    -ms-writing-mode: unset;
+    writing-mode: unset;
+    rotate: 0deg;
+  }
+
+  .block {
+    margin-bottom: 10px;
+  }
+
+  .gender {
+    margin-top: 10px;
+  }
+
+  .nationality {
+    width: 300px;
+  }
+
+  .birthDay-block {
+    display: contents;
+  }
+
+  .form-wrapper .input {
+    width: 300px;
+  }
+
+  #selectDay {
+    width: 80px;
+  }
+
+  #selectMonth {
+    width: 110px;
+  }
+
+  #selectYear {
+    width: 80px;
+  }
+
+  .animation {
+    top: 200px;
+    left: -377px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .block-right {
+    height: 70px;
+    padding: 5px 10px 10px 20px;
+  }
+
+  .form-wrapper .email__checkMark {
+    right: -8px;
+  }
+
+  .form-wrapper .input {
+    width: 230px;
+  }
+
+  .gender {
+    margin-top: 10px;
+  }
+
+  #selectDay {
+    width: 60px;
+  }
+
+  #selectMonth {
+    width: 100px;
+  }
+
+  #selectYear {
+    width: 60px;
+  }
+
+  footer {
+    display: contents;
+    text-align: center;
+  }
+
+  .form-wrapper .question {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .animation {
+    top: 195px;
+    left: -495px;
+  }
+}
+
+@media (max-width: 280px) {
+  .form-wrapper .input {
+    width: 210px;
+  }
+
+  #selectDay {
+    width: 30px;
+  }
+
+  #selectMonth {
+    width: 90px;
+  }
+
+  #selectYear {
+    width: 60px;
+  }
+}
+input:invalid {
+  border-bottom: 1px solid yellow;
+}
+
+input:valid {
+  border-bottom: 1px solid blue;
+}
+
+#firstName::after {
+  content: "&#9913";
+}
+
+.registration {
+  margin-left: 44px;
+  margin-top: 177px;
+}
+
+.registration {
+  display: none;
+  margin-bottom: 154px;
+}
+
+.registration__title {
+  font: 500 22px/25.78px "Work Sans", sans-serif;
+  letter-spacing: -0.46px;
+  color: #111111;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.registration__subtitle {
+  font: 14px/16.41px "Work Sans", sans-serif;
+  margin: 0;
+  letter-spacing: -0.4px;
+}
